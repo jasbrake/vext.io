@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ./partials/head %>
+  <body>
+    <%- include('partials/nav', {currentPage: 'whois'}) %>
+    <main class="pure-g">
+      <div class="pure-u-sm-1">
+        <h1>AC Whois</h1>
+      </div>
+      <div class="pure-u-sm-1 center search">
+        <form id="whois_form" class="pure-form">
+            <div class="pure-u-sm-1 center whois-options">
+              <div><input type="radio" name="mode" value="text" checked><span>Text</span></div>
+              <div><input type="radio" name="mode" value="regex"><span>RegEx</span></div>
+              <div><input type="radio" name="mode" value="cidr"><span>CIDR Range</span></div>
+              <div><input id="case_insensitive" type="checkbox" name="caseInsensitive" value="1"><span>Case Insensitive</span></div>
+            </div>
+            <input id="whois_input" type="text">
+            <input id="whois_submit" class ="pure-button pure-button-primary" type="submit" value="Search">
+        </form>
+      </div>
+      <div id="message" class="pure-u-sm-1 center"></div>
+      <div class="pure-u-sm-1">
+        <table id="response_table" class="pure-table pure-table-bordered ">
+          <thead>
+            <tr>
+              <td data-sort-method='number' data-sort-default>IP</td>
+              <td>Name</td>
+              <td>Country</td>
+            </tr>
+          </thead>
+          <tbody class="pure-table-striped" id="response"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="/static/whois.bundle.js" charset="utf-8"></script>
+  </body>
+</html>

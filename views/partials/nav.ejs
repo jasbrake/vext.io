@@ -1,0 +1,24 @@
+  <div class="header">
+    <div id="menu" class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <a class="pure-menu-heading" href="/">Vext.io</a>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item <% if (currentPage === 'home') { %>pure-menu-selected<% } %>"><a href="/" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item <% if (currentPage === 'whois') { %>pure-menu-selected<% } %>"><a href="/whois" class="pure-menu-link">AC Whois</a></li>
+        <li class="pure-menu-item <% if (currentPage === 'users') { %>pure-menu-selected<% } %>"><a href="/users" class="pure-menu-link">Users</a></li>
+      </ul>
+      <div id="login-form" class="pure-menu-list">
+        <form action="" class="pure-form">
+          <input id="login-email-input" type="email" placeholder="Email">
+          <input id="login-password-input" type="password" placeholder="Password">
+          <button id="login-submit" type="submit" class="pure-button pure-button-primary">Sign in</button>
+        </form>
+      </div>
+      <div id="logged-in" style="display: none" class="pure-menu-list">
+        <span id="logged-in-message">Logged in as <span id="logged-in-user">?</span></span>
+        <span id="logout">
+          <a href="#">Logout</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="/static/login.bundle.js"></script>

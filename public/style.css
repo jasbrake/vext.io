@@ -1,0 +1,167 @@
+* {
+  font-family: 'Khula', sans-serif;
+}
+main {
+  margin: 3.4em 3em 1em 3em;
+}
+#login-form {
+  float: right;
+  margin-top: 4px;
+  margin-right: 3px;
+  white-space: unset !important;
+}
+#logged-in {
+  float: right;
+  color: white;
+  margin-right: 10px;
+  margin-top: 14px;
+}
+.center {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.splash-container {
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 88%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
+}
+.splash {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.splash-head {
+  font-size: 300%;
+  color: black;
+  padding: 1em 1.6em;
+  font-weight: 100;
+  border-radius: 5px;
+  line-height: 1em;
+}
+.splash-subhead {
+  color: black;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+.float-right {
+  float: right;
+}
+#whois_input {
+  width: 50%;
+}
+#whois_submit {
+  width: 25%;
+}
+
+.whois-options div{
+  display: inline-block;
+  margin: 1em;
+}
+
+.whois-options div input {
+  margin-right: .4em;
+}
+
+#response_table {
+  min-width: 100%;
+  display: none;
+}
+
+#response a {
+  text-decoration:none;
+  color: #0078e7;
+}
+
+#message {
+  font-size: .9em;
+  color: red;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.pure-table thead {
+  font-weight: bold;
+  background: #cecece;
+}
+
+#menu {
+  white-space: normal;
+  position: fixed;
+  z-index: 1000; /* so the menu or its navicon stays above all content */
+  background: #191818;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#menu .pure-menu-heading {
+  font-size: 125%;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin-top: 0;
+  padding: 0.5em 0.8em;
+  text-transform: uppercase;
+}
+#menu .pure-menu-heading:hover,
+#menu .pure-menu-heading:focus {
+  color: #999;
+}
+#menu .pure-menu-selected {
+  background: #0078e7;
+}
+
+#menu .pure-menu-selected a {
+    color: #fff;
+}
+
+#menu li.pure-menu-selected a:hover,
+#menu li.pure-menu-selected a:focus {
+    background: none;
+}
+#menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus {
+  background: #333;
+}
+
+#menu .pure-menu ul {
+  border: none;
+  background: transparent;
+}
+#menu a {
+  color: #999;
+  border: none;
+  white-space: normal;
+  padding: 0.8em 1em;
+}
+
+#logged-in-user {
+  color: #0078e7;
+  font-weight: bold;
+}
+
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-xlarge {
+  font-size: 150%;
+}

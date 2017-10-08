@@ -1,0 +1,48 @@
+{
+  "name": "vext.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "mocha ./**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
+    "build": "webpack"
+  },
+  "author": "Jason Brake",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^21.2.1",
+    "mocha": "^4.0.0",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "helmet": "^3.8.2",
+    "ip": "^1.1.5",
+    "jquery": "^3.2.1",
+    "jsonwebtoken": "^8.0.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.4",
+    "maxmind": "^2.2.0",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.8.2",
+    "readline": "^1.3.0",
+    "tablesort": "^5.0.1",
+    "validator": "^9.0.0",
+    "zepto": "^1.2.0"
+  },
+  "standard": {
+    "globals": [
+      "URLSearchParams"
+    ]
+  }
+}
