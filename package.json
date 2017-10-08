@@ -1,7 +1,7 @@
 {
   "name": "vext.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project for vext.io",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server",
@@ -11,6 +11,10 @@
   },
   "author": "Jason Brake",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasbrake/vext.io.git"
+  },
   "devDependencies": {
     "expect": "^21.2.1",
     "mocha": "^4.0.0",
