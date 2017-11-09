@@ -135,7 +135,7 @@ router.get('/whois', authenticate, (req, res) => {
       data.dec = ip.toLong(data.ip)
       data.name = values[1]
       const geoip = countryGeoIP.get(data.ip)
-      data.country = (geoip.country) ? geoip.country.names.en : ''
+      data.country = (geoip && geoip.country) ? geoip.country.names.en : ''
       lines.push(data)
     }
   })
